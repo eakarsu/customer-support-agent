@@ -1,0 +1,28 @@
+{
+  "id": "customer-support-agent",
+  "title": "Customer Support Agent App",
+  "industry": "Sales, Marketing & CRM",
+  "industryId": "sales-marketing-crm",
+  "specialization": "Customer Support Agent",
+  "sourcePlatformGroup": "customer-experience-platform",
+  "sources": [
+    "AiCustomerSupportAgent",
+    "ai-customer-implementation-success-manager"
+  ],
+  "featureCount": 284,
+  "candidateFeatureCount": 342,
+  "eliminatedSimilarFeatures": 58,
+  "evidenceCount": 496,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 0,
+    "seededTables": 0,
+    "seededRows": 0
+  },
+  "visibleFeatureCount": 69,
+  "featureVisibilityMode": "source-backed-fallback"
+}
