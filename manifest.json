@@ -9,10 +9,10 @@
     "AiCustomerSupportAgent",
     "ai-customer-implementation-success-manager"
   ],
-  "featureCount": 284,
-  "candidateFeatureCount": 342,
-  "eliminatedSimilarFeatures": 58,
-  "evidenceCount": 496,
+  "featureCount": 291,
+  "candidateFeatureCount": 352,
+  "eliminatedSimilarFeatures": 61,
+  "evidenceCount": 507,
   "aiPageCount": 0,
   "sourceAIPageCount": 0,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
@@ -23,6 +23,6 @@
     "seededTables": 0,
     "seededRows": 0
   },
-  "visibleFeatureCount": 69,
+  "visibleFeatureCount": 70,
   "featureVisibilityMode": "source-backed-fallback"
 }
