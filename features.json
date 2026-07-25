@@ -166,10 +166,12 @@
     "canonicalKey": "agent coaching",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/agent-coaching"
+      "/agent-coaching",
+      "/ai-advanced?tool=agent-coaching"
     ],
     "sourceProjects": [
       "AiCustomerSupportAgent"
@@ -178,6 +180,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:20",
+        "route": "/ai-advanced?tool=agent-coaching",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -397,6 +406,32 @@
         "sourceProject": "AiCustomerSupportAgent",
         "path": "frontend/src/pages/AiEscalationRouter.jsx",
         "route": "/AiEscalationRouter",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
+    "name": "AI Faq Builder",
+    "canonicalKey": "ai builder faq",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=faq-builder"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:41",
+        "route": "/ai-advanced?tool=faq-builder",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -890,6 +925,32 @@
     ]
   },
   {
+    "name": "Auto Tag Ticket Multi Label",
+    "canonicalKey": "auto label multi tag ticket",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=auto-tag-ticket"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:95",
+        "route": "/ai-advanced?tool=auto-tag-ticket",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
     "name": "Batch",
     "canonicalKey": "batch",
     "aliases": [],
@@ -1291,9 +1352,11 @@
     "canonicalKey": "analyzer call transcript",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-advanced?tool=call-transcript-analyzer",
       "/call-transcript-analyzer"
     ],
     "sourceProjects": [
@@ -1303,6 +1366,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:70",
+        "route": "/ai-advanced?tool=call-transcript-analyzer",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -1766,19 +1836,16 @@
       "api"
     ],
     "routes": [
-      "/ai/chat",
       "/api/ai/chat",
       "/chat"
     ],
     "sourceProjects": [
-      "AICompetitiveAnalysisTool",
       "AIFranchisePerformanceBenchmarker",
       "AiCustomerSupportAgent"
     ],
     "consolidatedFromApps": [
       "sales-marketing-crm/customer-support-agent",
-      "sales-marketing-crm/franchise-performance-benchmarker",
-      "sales-marketing-crm/review-response-manager"
+      "sales-marketing-crm/franchise-performance-benchmarker"
     ],
     "evidence": [
       {
@@ -1787,13 +1854,6 @@
         "path": "server/index.js:137",
         "route": "/api/ai/chat",
         "originApp": "sales-marketing-crm/franchise-performance-benchmarker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AICompetitiveAnalysisTool",
-        "path": "backend/routes/index.js:57",
-        "route": "/ai/chat",
-        "originApp": "sales-marketing-crm/review-response-manager"
       },
       {
         "kind": "api",
@@ -1885,6 +1945,32 @@
         "sourceProject": "AiCustomerSupportAgent",
         "path": "backend/src/routes/aiNew.js:149",
         "route": "/churn-risk",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
+    "name": "Churn Risk Analyzer",
+    "canonicalKey": "analyzer churn risk",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=churn-risk"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:13",
+        "route": "/ai-advanced?tool=churn-risk",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -2388,9 +2474,11 @@
     "canonicalKey": "classify ticket",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-classifier?tool=classify-ticket",
       "/classify-ticket"
     ],
     "sourceProjects": [
@@ -2400,6 +2488,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiTicketClassifier.jsx:413",
+        "route": "/ai-classifier?tool=classify-ticket",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -3224,6 +3319,32 @@
     ]
   },
   {
+    "name": "Customer Lifetime Value Scoring",
+    "canonicalKey": "customer lifetime scoring value",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=clv-scoring"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:34",
+        "route": "/ai-advanced?tool=clv-scoring",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
     "name": "Delete",
     "canonicalKey": "delete",
     "aliases": [],
@@ -3901,6 +4022,32 @@
         "sourceProject": "AiCustomerSupportAgent",
         "path": "backend/src/routes/authoritative.js:169",
         "route": "/evaluations",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
+    "name": "Extract Call Action Items",
+    "canonicalKey": "action call extract item",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=extract-call-action-items"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:112",
+        "route": "/ai-advanced?tool=extract-call-action-items",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -5031,6 +5178,32 @@
     ]
   },
   {
+    "name": "Multilingual Auto Translate",
+    "canonicalKey": "auto multilingual translate",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=translate"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:51",
+        "route": "/ai-advanced?tool=translate",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
     "name": "No Live Chat Widget For Website Embedding",
     "canonicalKey": "chat embedding for live no website widget",
     "aliases": [],
@@ -5851,9 +6024,11 @@
     "canonicalKey": "predict resolution",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-predictor?tool=predict-resolution",
       "/predict-resolution"
     ],
     "sourceProjects": [
@@ -5863,6 +6038,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiResolutionPredictor.jsx:410",
+        "route": "/ai-predictor?tool=predict-resolution",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -6029,17 +6211,56 @@
     ]
   },
   {
+    "name": "Products",
+    "canonicalKey": "product",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-shopping?tool=products",
+      "/products"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiShoppingAssistant.jsx:671",
+        "route": "/ai-shopping?tool=products",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "backend/src/routes/aiFeatures.js:1059",
+        "route": "/products",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "backend/src/routes/aiFeatures.js:1087",
+        "route": "/products",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
     "name": "Quality Scores",
     "canonicalKey": "quality score",
-    "aliases": [
-      "Score Quality"
-    ],
+    "aliases": [],
     "kinds": [
       "api"
     ],
     "routes": [
-      "/quality-scores",
-      "/score-quality"
+      "/quality-scores"
     ],
     "sourceProjects": [
       "AiCustomerSupportAgent"
@@ -6053,13 +6274,6 @@
         "sourceProject": "AiCustomerSupportAgent",
         "path": "backend/src/routes/aiFeatures.js:665",
         "route": "/quality-scores",
-        "originApp": "sales-marketing-crm/customer-support-agent"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AiCustomerSupportAgent",
-        "path": "backend/src/routes/aiFeatures.js:527",
-        "route": "/score-quality",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -6834,9 +7048,11 @@
     "canonicalKey": "escalation route",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-escalation?tool=route-escalation",
       "/route-escalation"
     ],
     "sourceProjects": [
@@ -6846,6 +7062,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiEscalationRouter.jsx:376",
+        "route": "/ai-escalation?tool=route-escalation",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -7059,6 +7282,41 @@
         "sourceProject": "AiCustomerSupportAgent",
         "path": "backend/src/routes/crmFeat_calendarSync.js:156",
         "route": "/ai/score-meeting-quality",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
+    "name": "Score Quality",
+    "canonicalKey": "quality score",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-quality?tool=score-quality",
+      "/score-quality"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiQualityScorer.jsx:337",
+        "route": "/ai-quality?tool=score-quality",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "backend/src/routes/aiFeatures.js:527",
+        "route": "/score-quality",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -7325,9 +7583,11 @@
     "canonicalKey": "chat shopping",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-shopping?tool=shopping-chat",
       "/shopping-chat"
     ],
     "sourceProjects": [
@@ -7337,6 +7597,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiShoppingAssistant.jsx:412",
+        "route": "/ai-shopping?tool=shopping-chat",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -7403,9 +7670,11 @@
     "canonicalKey": "scheduling sla smart",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-advanced?tool=sla-smart-scheduling",
       "/sla-smart-scheduling"
     ],
     "sourceProjects": [
@@ -7415,6 +7684,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:77",
+        "route": "/ai-advanced?tool=sla-smart-scheduling",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -7465,6 +7741,32 @@
         "sourceProject": "ai-customer-implementation-success-manager",
         "path": "frontend/src/app/(protected)/features/[slug]/page.tsx",
         "route": "/features/[slug]",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
+    "name": "Smart Canned Response Suggester",
+    "canonicalKey": "canned response smart suggester",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=smart-canned-suggester"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:27",
+        "route": "/ai-advanced?tool=smart-canned-suggester",
         "originApp": "sales-marketing-crm/customer-support-agent"
       }
     ]
@@ -7734,9 +8036,11 @@
     "canonicalKey": "knowledge suggest",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-knowledge?tool=suggest-knowledge",
       "/suggest-knowledge"
     ],
     "sourceProjects": [
@@ -7746,6 +8050,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiKnowledgeSuggester.jsx:346",
+        "route": "/ai-knowledge?tool=suggest-knowledge",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
@@ -8714,13 +9025,41 @@
     ]
   },
   {
+    "name": "Ticket Closure Predictor",
+    "canonicalKey": "closure predictor ticket",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-advanced?tool=closure-predictor"
+    ],
+    "sourceProjects": [
+      "AiCustomerSupportAgent"
+    ],
+    "consolidatedFromApps": [
+      "sales-marketing-crm/customer-support-agent"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:63",
+        "route": "/ai-advanced?tool=closure-predictor",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      }
+    ]
+  },
+  {
     "name": "Ticket Priority Predictor",
     "canonicalKey": "predictor priority ticket",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-advanced?tool=ticket-priority-predictor",
       "/ticket-priority-predictor"
     ],
     "sourceProjects": [
@@ -8730,6 +9069,13 @@
       "sales-marketing-crm/customer-support-agent"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AiCustomerSupportAgent",
+        "path": "frontend/src/pages/AiAdvancedFeatures.jsx:6",
+        "route": "/ai-advanced?tool=ticket-priority-predictor",
+        "originApp": "sales-marketing-crm/customer-support-agent"
+      },
       {
         "kind": "api",
         "sourceProject": "AiCustomerSupportAgent",
