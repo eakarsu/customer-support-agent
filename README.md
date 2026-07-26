@@ -3,7 +3,7 @@
 Industry: **Sales, Marketing & CRM**  
 Specialization: **Customer Support Agent**
 
-This standalone application consolidates source-backed capabilities into 301 optimized features, including 19 visible data-backed or AI-enabled views. Its public demo SQLite database contains 0 sanitized source rows across 0 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 301 optimized features, including all 301 source-backed feature views. Its public demo SQLite database contains 0 sanitized source rows across 0 imported tables and 120 operational workflow records.
 
 ## Run locally
 

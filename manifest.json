@@ -23,6 +23,6 @@
     "seededTables": 0,
     "seededRows": 0
   },
-  "visibleFeatureCount": 19,
-  "featureVisibilityMode": "seeded-or-ai"
+  "visibleFeatureCount": 301,
+  "featureVisibilityMode": "all-source-backed"
 }
